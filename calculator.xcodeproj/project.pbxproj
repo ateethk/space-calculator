@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D506B471D6977DC00049272 /* launchbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D506B441D6977DC00049272 /* launchbg.png */; };
+		6D506B481D6977DC00049272 /* Retro-Calc.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D506B451D6977DC00049272 /* Retro-Calc.png */; };
+		6D506B491D6977DC00049272 /* robot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D506B461D6977DC00049272 /* robot.png */; };
 		6D80A71D1D68C60D00A86817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D80A71C1D68C60D00A86817 /* AppDelegate.swift */; };
 		6D80A71F1D68C60D00A86817 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D80A71E1D68C60D00A86817 /* ViewController.swift */; };
 		6D80A7221D68C60D00A86817 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D80A7201D68C60D00A86817 /* Main.storyboard */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D506B441D6977DC00049272 /* launchbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchbg.png; sourceTree = "<group>"; };
+		6D506B451D6977DC00049272 /* Retro-Calc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Retro-Calc.png"; sourceTree = "<group>"; };
+		6D506B461D6977DC00049272 /* robot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot.png; sourceTree = "<group>"; };
 		6D80A7191D68C60D00A86817 /* calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D80A71C1D68C60D00A86817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D80A71E1D68C60D00A86817 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +109,9 @@
 			children = (
 				6D80A74A1D68D17100A86817 /* Minecraft.ttf */,
 				6D80A74C1D68F47B00A86817 /* btn.wav */,
+				6D506B441D6977DC00049272 /* launchbg.png */,
+				6D506B451D6977DC00049272 /* Retro-Calc.png */,
+				6D506B461D6977DC00049272 /* robot.png */,
 				6D80A71C1D68C60D00A86817 /* AppDelegate.swift */,
 				6D80A71E1D68C60D00A86817 /* ViewController.swift */,
 				6D80A7201D68C60D00A86817 /* Main.storyboard */,
@@ -199,6 +208,7 @@
 				TargetAttributes = {
 					6D80A7181D68C60D00A86817 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 86R264W2HN;
 					};
 					6D80A72C1D68C60D00A86817 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -236,8 +246,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D80A74D1D68F47B00A86817 /* btn.wav in Resources */,
+				6D506B481D6977DC00049272 /* Retro-Calc.png in Resources */,
+				6D506B491D6977DC00049272 /* robot.png in Resources */,
 				6D80A7271D68C60D00A86817 /* LaunchScreen.storyboard in Resources */,
 				6D80A7241D68C60D00A86817 /* Assets.xcassets in Resources */,
+				6D506B471D6977DC00049272 /* launchbg.png in Resources */,
 				6D80A74B1D68D17100A86817 /* Minecraft.ttf in Resources */,
 				6D80A7221D68C60D00A86817 /* Main.storyboard in Resources */,
 			);
@@ -407,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ateethkosuri.calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -418,10 +434,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ateethkosuri.calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -490,6 +509,7 @@
 				6D80A7431D68C60D00A86817 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D80A7441D68C60D00A86817 /* Build configuration list for PBXNativeTarget "calculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +518,7 @@
 				6D80A7461D68C60D00A86817 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D80A7471D68C60D00A86817 /* Build configuration list for PBXNativeTarget "calculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +527,7 @@
 				6D80A7491D68C60D00A86817 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -40,6 +40,7 @@
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="MXQ-Fu-DXU"/>
+                                        <exclude reference="srQ-9L-Y0u"/>
                                         <exclude reference="yNt-81-7zP"/>
                                     </mask>
                                 </variation>
@@ -268,11 +269,24 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oj-Lv-e0t">
+                                <rect key="frame" x="183" y="71" width="90" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="8YN-Mm-rJQ"/>
+                                    <constraint firstAttribute="width" constant="90" id="UKD-Vy-gR8"/>
+                                </constraints>
+                                <state key="normal" image="clear"/>
+                                <connections>
+                                    <action selector="clearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fp9-49-uCh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="SGT-vV-t7q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="26w-kz-LMP"/>
+                            <constraint firstItem="7oj-Lv-e0t" firstAttribute="top" secondItem="4E1-wq-v9J" secondAttribute="top" constant="58" id="2gh-Qc-Bcr"/>
                             <constraint firstAttribute="bottom" secondItem="OM6-I9-s3D" secondAttribute="bottom" constant="-30" id="3g0-F3-5D2"/>
+                            <constraint firstItem="7oj-Lv-e0t" firstAttribute="leading" secondItem="4E1-wq-v9J" secondAttribute="leading" constant="270" id="4N7-W0-HEk"/>
                             <constraint firstItem="XIA-6c-sxJ" firstAttribute="centerY" secondItem="4E1-wq-v9J" secondAttribute="centerY" constant="60" id="EXg-wt-ZSi"/>
                             <constraint firstItem="4E1-wq-v9J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GhD-fk-bp3"/>
                             <constraint firstItem="XIA-6c-sxJ" firstAttribute="centerX" secondItem="4E1-wq-v9J" secondAttribute="centerX" id="JTm-s3-EI6"/>
@@ -320,6 +334,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
